@@ -28,6 +28,9 @@ html {
   scroll-behavior: smooth;
 }
 
+/* .tl-background {
+  background: transparent !important;
+} */
 body {
   background:
     radial-gradient(circle at top left, #2563eb55, transparent 35%),
