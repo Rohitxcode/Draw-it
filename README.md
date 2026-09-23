@@ -1,36 +1,164 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Draw It
 
-## Getting Started
+> A real-time collaborative whiteboard built with **Next.js 16**, **TypeScript**, **tldraw**, and **Bun**.
 
-First, run the development server:
+Draw It lets multiple users join the same canvas through a shared link and collaborate on an infinite whiteboard in real time. Inspired by tools like Excalidraw Live, it focuses on a clean drawing experience with instant room creation and multiplayer synchronization.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+
+
+## ✨ Features
+
+* 🎨 Infinite whiteboard powered by **tldraw**
+* 👥 Real-time multiplayer collaboration
+* 🔗 One-click room creation with shareable links
+* 🖊️ Freehand drawing, shapes, arrows, text, and sticky notes
+* ⚡ Instant synchronization across connected users
+* 🌙 Responsive full-screen canvas with system theme support
+* 📋 Copy Share Link button for quick collaboration
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology          | Purpose                              |
+| ------------------- | ------------------------------------ |
+| **Next.js 16**      | React framework using the App Router |
+| **TypeScript**      | Type-safe development                |
+| **tldraw**          | Whiteboard and drawing engine        |
+| **@tldraw/sync**    | Real-time collaboration layer        |
+| **Tailwind CSS v4** | Styling                              |
+| **Bun**             | Package manager and runtime          |
+
+---
+
+## 📁 Project Structure
+
+```text
+draw-it/
+├── app/
+│   ├── page.tsx               # Application entry page
+│   ├── layout.tsx             # Root layout
+│   ├── loading.tsx            # Loading screen
+│   ├── globals.css            # Global styles
+│   └── TldrawCanvas.tsx       # Collaborative whiteboard component
+│
+├── public/                    # Static assets
+├── package.json
+├── bun.lock
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Clone the repository
 
-## Learn More
+```bash
+git git clone https://github.com/Rohitxcode/Draw-it.git
+cd draw-it
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Install dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Using **Bun** (recommended):
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+bun install
+```
 
-## Deploy on Vercel
+Or using **npm**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm install
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Start the development server
+
+```bash
+bun run dev
+```
+
+Open your browser at:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## 🤝 How Multiplayer Works
+
+1. Open the application.
+2. A unique room ID is generated automatically and stored in the URL hash.
+3. Click **Copy Share Link**.
+4. Send the copied link to another user.
+5. Both users join the same collaborative whiteboard and can draw simultaneously.
+
+---
+
+## 💻 Available Scripts
+
+```bash
+# Start development server
+bun run dev
+
+# Build for production
+bun run build
+
+# Start production server
+bun run start
+
+# Run linting
+bun run lint
+```
+
+---
+
+## 📌 Current Functionality
+
+* [x] Infinite collaborative canvas
+* [x] Room creation through URL hash
+* [x] Shareable collaboration link
+* [x] Live synchronized drawing
+* [x] Responsive full-screen interface
+
+---
+
+## 🚧 Planned Features
+
+* 🎙️ Voice chat using WebRTC
+* 💬 Real-time chat panel
+* 👤 User presence and avatars
+* 🔒 Private rooms with authentication
+* 💾 Save whiteboards to a database
+* 📁 Export drawings as PNG, SVG, and JSON
+* 🕘 Whiteboard history and versioning
+
+---
+
+## 🎯 Learning Goals
+
+This project is part of my journey to learn **Next.js by building real-world applications** instead of following tutorials. It explores:
+
+* Next.js App Router architecture
+* Real-time collaboration concepts
+* Multiplayer synchronization
+* URL-based room management
+* Component-driven UI design
+* TypeScript in production applications
+
+---
+
+
+---
+
+## 👨‍💻 Author
+
+**Rohit Kumar**
+
+Computer Science Engineering Graduate (2026)
+
+Passionate about Full-Stack Development, System Design, and building real-time web applications with Next.js and TypeScript.
