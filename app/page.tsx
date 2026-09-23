@@ -1,7 +1,5 @@
-
-
 import TldrawCanvas from "./TldrawCanvas";
 
-export default function Page() {
+export default function Home() {
   return <TldrawCanvas />;
 }
