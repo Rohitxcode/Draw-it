@@ -5,7 +5,22 @@
 Draw It lets multiple users join the same canvas through a shared link and collaborate on an infinite whiteboard in real time. Inspired by tools like Excalidraw Live, it focuses on a clean drawing experience with instant room creation and multiplayer synchronization.
 
 ---
-
+> [!IMPORTANT]
+> ### ⚠️ Production Deployment Note (tldraw Licensing)
+>
+> This project was originally built using **tldraw** for its excellent whiteboard experience and real-time collaboration. However, **tldraw now requires a commercial/production license for deploying collaborative applications on platforms like Vercel**.
+>
+> If you're building a similar collaborative whiteboard for learning or personal projects, consider using **Excalidraw** instead. Excalidraw is open source, production-friendly for many use cases, and supports real-time collaboration through **Yjs + WebRTC** (or other Yjs providers) without the same production licensing restriction.
+>
+> **Recommended alternative stack:**
+>
+> - 🎨 **Excalidraw** — Whiteboard engine
+> - 🔄 **Yjs** — CRDT-based real-time synchronization
+> - 🌐 **y-webrtc** — Peer-to-peer collaboration
+> - ⚡ **Next.js + TypeScript** — Application framework
+>
+> The overall architecture of this project can be recreated with Excalidraw while remaining easier to deploy for production and portfolio projects.
+---
 
 
 ## ✨ Features
